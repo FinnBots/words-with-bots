@@ -262,7 +262,7 @@ canvas{ touch-action:none; }
    turned that off for a pointer that IS a cursor, so a laptop kept thumb-sized
    keys it never needed. Measured at 1440x900 across the served roster: ten
    games carry a control block over 90px tall — RIVETBOT 152, BOTMAN/BURROBOT/
-   Mrs Bot 142, BotFord/DRUM PUSH/HOP 106 136 — and every one of those canvases
+   Mrs Bot 142, BotFord/DRUM PUSH/HOPBOT 136 — and every one of those canvases
    is HEIGHT-BOUND, so each pixel of pad comes straight out of the play area.
    The pad stays (people do click it), it just stops being a thumb rest.
    Measured gain: +4.6% to +8.5% canvas height on eight games, and because the
@@ -514,7 +514,7 @@ canvas{ touch-action:none; }
       '.fb-seed-btn:focus-visible{outline:2px solid #3a6ff7;outline-offset:2px}' +
       '.fb-seed .s{display:none}' +
       /* The game's own NAME outranks this chip. At 375px the long label pushed
-       * "WING 106" out of the topbar and left the title rendering as "W..",
+       * "WINGBOT" out of the topbar and left the title rendering as "W..",
        * so below 560px the chip drops the date and uses its short label. A
        * badge that costs a game its title is not worth the information. */
       '@media (max-width:560px){.fb-seed{font-size:10px;padding:3px 3px 3px 7px;gap:4px}' +
@@ -556,7 +556,7 @@ canvas{ touch-action:none; }
      2. CABINET — the canvas reads as an arcade screen: bezel, amber rim light, glow.
      3. THEME  — dark-mode parity with the hub (games.finnstergram.com adapts, the
                  games did not, so hub -> game was a light/dark slap in the face).
-   v2: the PIXEL bot mark (16x16 monitor head, magenta smile — the face of Bots #106/#20)
+   v3: the PIXEL bot mark is Bot 2969, the main character (full colour, 16x16, outlined)
    shared with finnstergram.com and the hub, and a NIGHT-MODE SWITCH in the topbar.
    Section 4 below is written ONCE; apply-brand.js emits it twice — for "the device is
    dark and the player has not chosen light", and for "the switch says dark" — scoping
@@ -1001,7 +1001,7 @@ body:not(.mode-paid) .app .facts{ display:block !important; }
 <body>
   <div class="wrap">
     <header class="topbar">
-      <!--fb:title--><a class="fb-mark" href="https://games.finnstergram.com" aria-label="FinnBots — more games"><svg class="fb-bot" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 1h2v2H7zM2 3h12v1H2zM1 4h14v9H1zM2 13h12v1H2zM0 7h1v3H0zM15 7h1v3h-1z"/><path fill="var(--fb-amber)" d="M7 0h2v1H7z"/><path fill="var(--fb-screen)" d="M2 5h12v7H2z"/><path fill="var(--fb-face,#ff4fd8)" d="M4 6h2v1H4zM3 7h1v2H3zM6 7h1v2H6zM10 6h2v1h-2zM9 7h1v2H9zM12 7h1v2h-1zM4 10h1v1H4zM11 10h1v1h-1zM5 11h6v1H5z"/></svg><span class="fb-word">FINN<i>BOTS</i></span></a><button class="fb-theme" type="button" role="switch" aria-checked="false" aria-label="Night mode"><span class="fbt-track" aria-hidden="true"><span class="fbt-thumb"><svg class="fbt-sun" viewBox="0 0 7 7" shape-rendering="crispEdges"><path fill="#e8891c" d="M2 2h3v3H2zM3 0h1v1H3zM3 6h1v1H3zM0 3h1v1H0zM6 3h1v1H6zM1 1h1v1H1zM5 1h1v1H5zM1 5h1v1H1zM5 5h1v1H5z"/></svg><svg class="fbt-moon" viewBox="0 0 7 7" shape-rendering="crispEdges"><path fill="#3d3f9e" d="M2 0h3v1H2zM1 1h2v1H1zM0 2h2v3H0zM1 5h2v1H1zM2 6h3v1H2zM4 5h2v1H4z"/></svg></span></span></button><!--/fb-->
+      <!--fb:title--><a class="fb-mark" href="https://games.finnstergram.com" aria-label="FinnBots — more games"><svg class="fb-bot" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path fill="#2a2350" d="M2 2h12v1H2zM1 3h1v1H1zM14 3h1v1H14zM0 4h1v1H0zM15 4h1v1H15zM0 5h1v1H0zM15 5h1v1H15zM0 6h1v1H0zM15 6h1v1H15zM0 7h1v1H0zM15 7h1v1H15zM0 8h1v1H0zM15 8h1v1H15zM0 9h1v1H0zM15 9h1v1H15zM0 10h1v1H0zM15 10h1v1H15zM0 11h1v1H0zM15 11h1v1H15zM0 12h1v1H0zM15 12h1v1H15zM1 13h1v1H1zM14 13h1v1H14zM2 14h12v1H2z"/><path fill="#ff8fc8" d="M3 0h2v1H3zM11 0h2v1H11zM3 1h2v1H3zM11 1h2v1H11z"/><path fill="#8fd3f5" d="M2 3h12v1H2zM1 4h14v1H1zM1 5h14v1H1zM1 6h14v1H1zM1 7h14v1H1zM1 8h14v1H1zM1 9h14v1H1zM1 10h14v1H1zM1 11h14v1H1zM1 12h14v1H1zM2 13h12v1H2z"/><path fill="#5aa9d6" d="M1 4h3v1H1zM1 5h3v1H1zM1 6h3v1H1zM1 7h3v1H1zM1 8h3v1H1zM1 9h3v1H1zM1 10h3v1H1zM1 11h3v1H1zM1 12h3v1H1z"/><path fill="#fff" d="M3 5h4v1H3zM9 5h4v1H9zM3 6h4v1H3zM9 6h4v1H9zM3 7h4v1H3zM9 7h4v1H9z"/><path fill="#2a2350" d="M4 5h1v1H4zM11 5h1v1H11zM4 6h2v1H4zM10 6h2v1H10z"/><path fill="#fff" d="M4 10h8v1H4zM4 11h8v1H4z"/><path fill="#2a2350" d="M6 10h1v1H6zM8 10h1v1H8zM10 10h1v1H10zM6 11h1v1H6zM8 11h1v1H8zM10 11h1v1H10z"/></svg><span class="fb-word">FINN<i>BOTS</i></span></a><button class="fb-theme" type="button" role="switch" aria-checked="false" aria-label="Night mode"><span class="fbt-track" aria-hidden="true"><span class="fbt-thumb"><svg class="fbt-sun" viewBox="0 0 7 7" shape-rendering="crispEdges"><path fill="#e8891c" d="M2 2h3v3H2zM3 0h1v1H3zM3 6h1v1H3zM0 3h1v1H0zM6 3h1v1H6zM1 1h1v1H1zM5 1h1v1H5zM1 5h1v1H1zM5 5h1v1H5z"/></svg><svg class="fbt-moon" viewBox="0 0 7 7" shape-rendering="crispEdges"><path fill="#3d3f9e" d="M2 0h3v1H2zM1 1h2v1H1zM0 2h2v3H0zM1 5h2v1H1zM2 6h3v1H2zM4 5h2v1H4z"/></svg></span></span></button><!--/fb-->
       <h1 class="title">WORDS WITH BOTS</h1>
       <div class="modebar" role="tablist" aria-label="Play mode">
         <button class="modepill active" id="modeFree" type="button" role="tab">Free</button>
@@ -1062,7 +1062,7 @@ body:not(.mode-paid) .app .facts{ display:block !important; }
     <div class="card">
       <h2 id="rulesTitle">HOW TO PLAY</h2>
       <ul class="rules">
-        <li>You are <b>Bot 106</b>. Make words on the board from your 7 tiles and outscore the <b>Bot</b>.</li>
+        <li>You are <b>Bot 2969</b>. Make words on the board from your 7 tiles and outscore the <b>Bot</b>.</li>
         <li><b>Drag</b> a tile onto the board, or tap a tile then a square. Tap a placed tile to take it back. Press <b>PLAY</b>.</li>
         <li>Keyboard: click a square and <b>type</b> the word. Space flips across/down, Backspace undoes, Enter plays.</li>
         <li>Your first word covers the ★. Every word after that must join one already on the board.</li>
@@ -1115,7 +1115,7 @@ body:not(.mode-paid) .app .facts{ display:block !important; }
 "use strict";
 /* ==========================================================================
    Words with Bots — FinnBots.  ENGINE (Free gameplay).
-   A 15x15 crossword tile game: you (Bot 106) against a FinnBots AI opponent.
+   A 15x15 crossword tile game: you (Bot 2969) against a FinnBots AI opponent.
    Rules, values and the board are the researched table in BRIEF-words-with-bots.md.
    Contract kept for the wallet/leaderboard layer:
      - export { newRun, stepGame, … } (headless) for the gates; a no-input run ends
@@ -1127,7 +1127,7 @@ body:not(.mode-paid) .app .facts{ display:block !important; }
    ========================================================================== */
 
 const CFG = { name:'Words with Bots', memoNS:'WBOT', chassis:'sink-leaderboard',
-              subdomain:'wordswithbots.finnstergram.com', port:9028, hero:106, accent:'#3a6ff7', entryOIL:25, scorePost:1 };
+              subdomain:'wordswithbots.finnstergram.com', port:9028, hero:2969, accent:'#3a6ff7', entryOIL:25, scorePost:1 };
 
 /* ---- RULES (the researched table — see the BRIEF) ------------------------- */
 const N = 15, MID = 7, RACK = 7, BINGO = 35;
@@ -1526,14 +1526,14 @@ if(!HEADLESS){
     .then(t=>{ loadWords(t); })
     .catch(e=>{ dictErr='Could not load the word list ('+e.message+') — reload to try again.'; });
 
-  /* ---- art: Bot 106 (the hero, cropped to his opaque box) ---- */
+  /* ---- art: Bot 2969 (the hero, cropped to his opaque box) ---- */
   const hero={ img:new Image(), ok:false, sx:0, sy:0, sw:0, sh:0 };
   hero.img.onload=function(){ try{ const c=document.createElement('canvas'), w=hero.img.naturalWidth, h=hero.img.naturalHeight;
       c.width=w; c.height=h; const g=c.getContext('2d'); g.drawImage(hero.img,0,0); const d=g.getImageData(0,0,w,h).data;
       let x0=w,y0=h,x1=-1,y1=-1; for(let y=0;y<h;y++) for(let x=0;x<w;x++) if(d[(y*w+x)*4+3]>16){ if(x<x0)x0=x; if(y<y0)y0=y; if(x>x1)x1=x; if(y>y1)y1=y; }
       if(x1>=0){ hero.sx=x0; hero.sy=y0; hero.sw=x1-x0+1; hero.sh=y1-y0+1; } else { hero.sw=w; hero.sh=h; }
     }catch(e){ hero.sw=hero.img.naturalWidth; hero.sh=hero.img.naturalHeight; } hero.ok=true; };
-  hero.img.src='assets/hero/bot-106.png';
+  hero.img.src='assets/hero/bot-2969.png';
 
   // ---- audio (tiny) ----
   let ac=null; function blip(f,d){ if(reduce)return; try{ ac=ac||new (window.AudioContext||window.webkitAudioContext)();
