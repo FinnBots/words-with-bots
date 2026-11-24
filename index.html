@@ -2122,7 +2122,7 @@ if(!HEADLESS){
     function showPaidStart(){
       entrySig=null; pendingResult=null; busy=false; lockModeToggle(false);
       var ov=$('paidOverlay'); ov.classList.add('show');
-      ov.innerHTML='<div class="card"><h2>WORDS WITH BOTS \u2014 PAID</h2><p>25 OIL entry \u00b7 one full game against the Bot on today\u2019s tile bag \u00b7 your points rank, win or lose \u00b7 fun leaderboard, not verified \u2014 holders \u00d71.5.</p>'+
+      ov.innerHTML='<div class="card"><h2>WORDS WITH BOTS \u2014 PAID</h2><p>25 OIL entry \u00b7 one full game against the Bot on today\u2019s tile bag \u00b7 your points rank, win or lose \u00b7 fun leaderboard, not verified \u2014 holders also get their own Holders table.</p>'+
         '<button class="btn" id="paidPlayBtn">Play (25 OIL)</button></div>';
       $('paidPlayBtn').addEventListener('click', function(){ handleStart(); });
       relabelStart();
@@ -2214,7 +2214,7 @@ if(!HEADLESS){
   var facts=$('facts');
   var confirmSheet=$('confirmSheet');
   var FREE_FACTS='Free \u00b7 wallet-free \u00b7 pays nothing';
-  var PAID_FACTS='Paid \u00b7 25 OIL entry \u00b7 one run \u00b7 fun leaderboard (not verified) \u00b7 holders \u00d71.5';
+  var PAID_FACTS='Paid \u00b7 25 OIL entry \u00b7 one run \u00b7 fun leaderboard (not verified) \u00b7 same real score for everyone';
 
   function setMode(m){
     mode=m;
